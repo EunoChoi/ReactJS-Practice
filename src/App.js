@@ -1,5 +1,6 @@
 import Home from './routes/Home.js';
-import Detail from './routes/Detail';
+import Information from './routes/Information';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,8 +12,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/detail/:id'>
-          <Detail />
+        <Route path='/information/:id'>
+          <Information />
         </Route>
 
         <Route path='/'>

@@ -12,12 +12,14 @@ function Movie({ cover, id, title, rating, genres, summary }) {
             <div className='movieBox__text'>
                 <h3>
                     {/*<a href="/detail">{title} [{rating}]</a>*/}
-                    <Link to={`detail/${id}`}>{title} [{rating}]</Link>
+                    <Link to={`information/${id}`}>{title}</Link>
                 </h3>
+                <span style={{ fontWeight: 600, color: 'salmon' }}>⭐️ {rating}</span>
                 <ul>
-                    {genres ? genres.map((g, index) => (<li key={index}>{g}</li>)) : null}
+                    {genres ? genres.slice(0, 3).map((g, index) => (<li key={index}>{g}</li>))
+                        : <li>ETC</li>}
                 </ul>
-                <p>{summary.length > 100 ? `${summary.slice(0, 100)}...` : summary}</p>
+                {/*<p>{summary.length > 100 ? `${summary.slice(0, 100)}...` : summary}</p>*/}
             </div>
         </div>)
 }

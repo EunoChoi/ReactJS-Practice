@@ -1,0 +1,40 @@
+.movieBox{
+    display: flex;
+
+    width: 450px;
+    height: 320px;
+    border-radius: 20px;
+
+    background-color: white;
+    box-shadow: 5px 5px 30px lightgray;
+    margin: 20px;
+
+    transition: all 0.2s ease-in-out ;
+}
+.movieBox:hover{
+    transform: scale(1.05);
+}
+
+.movieBox__img{
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.movieBox .cover{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.movieBox__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 250px;
+    padding : 20px;
+    box-sizing: border-box;
+
+}

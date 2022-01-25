@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import Home from './routes/Home.js';
 import Detail from './routes/Detail';
 import {

@@ -17,7 +17,7 @@ function Detail() {
     }, []);
     //console.log(movieInfo);
     return (<div>
-        <h1>{movieInfo.title}</h1>;
+        <h1>{movieInfo.title}</h1>
     </div>)
 }
 

@@ -17,10 +17,10 @@
     padding : 20px 40px;
 
 
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0);
 
 
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.85);
 
     transition: all 0.5s ease-in-out;
 }
@@ -29,6 +29,7 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 .header__title{
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
     font-size: 40px;
     font-weight: 800;
     transition: all 0.2s ease-in-out;
@@ -41,6 +42,7 @@
 
 }
 .header__menu div{
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
     padding: 0px 10px;
     transition: all 0.2s ease-in-out;
 }
@@ -48,6 +50,7 @@
     transform: scale(1.2);
 }
 .header__profil{
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
     transition: all 0.2s ease-in-out;
 }
 .header__profil:hover{
@@ -59,6 +62,7 @@
 }
 
 @media screen and (max-width: 800px) {
+    /*
     .header{
         height: 250px;
     }
@@ -72,5 +76,17 @@
     }
     .header__title{
         font-size: 30px;
+    }*/
+    .header__title{
+        font-size: 30px;
+    }
+    .header__menu{
+        font-size: 20px;
+    }
+    .header__menu>div{
+        padding :4px;
+    }
+    .header__profil span{
+        font-size: 20px;
     }
 }

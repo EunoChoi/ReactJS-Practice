@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import '../css/Movie.css';
 function Movie({ cover, id, title, rating, genres, summary }) {
     return (
+        <Link to={`information/${id}`}>
         <div className='movieBox' key={id}>
             <div className='movieBox__img'>
                 {cover ? <img className='cover' src={cover} ></img> : null}
@@ -12,7 +13,7 @@ function Movie({ cover, id, title, rating, genres, summary }) {
             <div className='movieBox__text'>
                 <h3>
                     {/*<a href="/detail">{title} [{rating}]</a>*/}
-                    <Link to={`information/${id}`}>{title}</Link>
+                    {title}
                 </h3>
                 <span style={{ fontWeight: 600, color: 'salmon' }}>⭐️ {rating}</span>
                 <ul>
@@ -21,7 +22,9 @@ function Movie({ cover, id, title, rating, genres, summary }) {
                 </ul>
                 {/*<p>{summary.length > 100 ? `${summary.slice(0, 100)}...` : summary}</p>*/}
             </div>
-        </div>)
+        </div>
+        </Link>)
+
 }
 
 

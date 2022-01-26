@@ -1,21 +1,89 @@
 
 .Information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    z-index: 0;
 
-    background-color: black;
+    background: #aa4b6b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
-.bg{    
+.bg{
+    z-index: 0;    
     width: 100vw;
     position: fixed;
     top: 0px;
     left: 0px;
-
     mask-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
 }
-.testBox{
-    z-index: 100;
-    position: relative;
-    bottom: 0px;
-    background-color: blue;
+.info__cover{
+    position: fixed;
+    top : 20vh;
+    left : 5vw;
+    z-index: 70;
+    width: 30vw;
+    height: 40vw;
+
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+
+}
+.infoBox{
+    position : relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 30;
+
+    padding : 30px;
+    padding-left: 45vw;
+    box-sizing: border-box;
+
+    margin-top: 30vh;
+
+    width : 100vw;
+    height: 60vh;
+
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    z-index: 50;
+}
+.infoBox>div:first-child{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    color:palevioletred;
+}
+.infoBox>div:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.infoBox__ul{
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+}
+.infoBox__ul li{
+    margin: 0px 20px;
+}
+.infoBox__descrition{
+    overflow-y: scroll;
+
+    font-size: 18px;
+    text-indent: 20px;
+    line-height: 1.5em;
+}
+.infoLodingPic{
+    position: fixed;
+    top : 45vh;
+    font-size: 60px;
 }

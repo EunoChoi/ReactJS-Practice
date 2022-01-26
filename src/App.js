@@ -2,25 +2,27 @@ import Home from './routes/Home.js';
 import Information from './routes/Information';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
-  //Link
+  Link
 } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/information/:id'>
-          <Information />
-        </Route>
+        <Route exact path='/information/:id'>
+            <Information />
+          </Route>
 
-        <Route path='/'>
-          <Home />
-        </Route>
+          <Route path='/'>
+            <Home />
+          </Route>
       </Switch>
-    </Router>);
+    </Router>
+        
+   );
 }
 
 export default App;

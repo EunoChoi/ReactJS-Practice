@@ -15,7 +15,11 @@ a{
     background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
 
     margin: 0px;
     width: auto;
@@ -38,12 +42,18 @@ a{
 }
 
 .Home__Title{
-    margin-left: 5vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
     font-weight: 600;
     color: rgba(255,255,255,0.7);
     font-size: 35px;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-
+    margin-top: 150px;
+}
+.Home__Title:first-child{
+    margin-top: 40px;
 }
 .Home__btn{
     text-align: right;
@@ -51,7 +61,6 @@ a{
     font-weight: 800;
     color: rgba(255,255,255,0.7);
     margin-top: 20px;
-    margin-right: 70px;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 
@@ -64,7 +73,18 @@ a{
 }
 .Home__bottomArea{
     text-align: right;
-    padding: 100px 70px 30px 0px;
     font-size: 20px;
+    padding-top : 200px;
+    padding-bottom: 50px;
     color: rgba(255,255,255,0.8);
+}
+.Home__areas{
+    display: flex;
+
+
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    width: 100vw;
+    overflow: scroll;
 }

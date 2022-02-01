@@ -106,12 +106,12 @@ function Home() {
             }
             <div className='Home__btn btnAll'>Go All ⇨</div>
 
-            <h1 className='Home__Title Drama'>📺 Drama Top 3</h1>
+            <h1 className='Home__Title Drama'>📺 Drama Top 6</h1>
             {loadingDrama ?
                 <h1 className='Loading'>⏳...</h1> :
                 <div>
-                    <div className='Home__mainArea'>
-                        {dramas.slice(0, 3).map((item) => (
+                    <div className='Home__areas'>
+                        {dramas.slice(0, 6).map((item) => (
                             <Movie
                                 key={item.id}
                                 cover={item.medium_cover_image}
@@ -126,12 +126,12 @@ function Home() {
             <div className='Home__btn btnDrama'>Go Dramas ⇨</div>
 
 
-            <h1 className='Home__Title Comedy'>🤣 Comedy Top 3</h1>
+            <h1 className='Home__Title Comedy'>🤣 Comedy Top 6</h1>
             {loadingComedy ?
                 <h1 className='Loading'>⏳...</h1> :
                 <div>
-                    <div className='Home__mainArea'>
-                        {comedies.slice(0, 3).map((item) => (
+                    <div className='Home__areas'>
+                        {comedies.slice(0, 6).map((item) => (
                             <Movie
                                 key={item.id}
                                 cover={item.medium_cover_image}
@@ -146,12 +146,12 @@ function Home() {
             <div className='Home__btn btnComedy'>Go Comedies ⇨</div>
 
 
-            <h1 className='Home__Title Horror'>🙀 Horror Top 3</h1>
+            <h1 className='Home__Title Horror'>🙀 Horror Top 6</h1>
             {loadingHorror ?
                 <h1 className='Loading'>⏳...</h1> :
                 <div>
-                    <div className='Home__mainArea'>
-                        {horrors.slice(0, 3).map((item) => (
+                    <div className='Home__areas'>
+                        {horrors.slice(0, 6).map((item) => (
                             <Movie
                                 key={item.id}
                                 cover={item.medium_cover_image}
@@ -165,7 +165,7 @@ function Home() {
             }
             <div className='Home__btn btnHorror'>Go Horrors ⇨</div>
 
-            
+
             <div className='Home__bottomArea'>
                 <span>
                     <a href='https://github.com/EunoChoi'>🖥 https://github.com/EunoChoi</a>
